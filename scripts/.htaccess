@@ -1,0 +1,8 @@
+ErrorDocument 400 http://onepiecefamily.ga/error/400
+ErrorDocument 401 http://onepiecefamily.ga/error/401
+ErrorDocument 403 http://onepiecefamily.ga/error/403
+ErrorDocument 404 http://onepiecefamily.ga/error/404
+ErrorDocument 503 http://onepiecefamily.ga/error/503
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^onepiecefamily\.ga
+RewriteRule ^(.*)$ https://www.onepiecefamily.ga/$1 [R=permanent,L]

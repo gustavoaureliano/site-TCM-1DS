@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+/*Início página Home*/
+
+/*cebeçalho de apresentação da página*/
+
+section.intro {
+    
+    padding: 25px 0;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    border-bottom: 1px solid #c0c0c0;
+    
+}
+
+section.intro h2 {
+    
+    font-family: 'Bangers', cursive;
+    font-size: 4.2rem;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: normal;
+    
+}
+
+/*apresentação dos personagens*/
+
+ul.imagens {
+    
+    width: 100%;
+    list-style-type: none;
+    padding-top: 25px;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+ul.imagens::before, ul.imagens::after {
+    
+    content: '';
+    display: table;
+    
+}
+
+ul.imagens::after {
+    
+    clear: both;
+    
+}
+
+ul.imagens li {
+    
+    display: block;
+    margin: 10px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    width: calc(25% - 20px);
+    
+}
+
+ul.imagens a {text-decoration: none;}
+
+div.shadow {
+    
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) );
+    border-radius: 30px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+ul.imagens li, div.shadow  {
+
+    transition: all .1s ease-out;
+
+}
+
+ul.imagens li, div.shadow, div.shadow p {
+
+    height: 250px;
+
+}
+
+div.shadow p {
+    
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 0;
+    font-size: 5.0rem;
+    box-sizing: border-box;
+    color: aliceblue;
+    transition: all 0s;
+    
+}
+
+div.shadow:hover {
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    
+}
+
+/*imagem dos personagens*/
+
+li#luffy { background-image: url("../_imagens/luffy-home.jpg");}
+li#zoro { background-image: url("../_imagens/zoro-home.jpg");}
+li#sanji { background-image: url("../_imagens/sanji-home.jpg");}
+li#usopp { background-image: url("../_imagens/usopp-home.jpg");}
+li#nami { background-image: url("../_imagens/nami-home.jpg");}
+li#chopper { background-image: url("../_imagens/chopper-home.jpg");}
+li#robin { background-image: url("../_imagens/robin-home.jpg");}
+li#franky { background-image: url("../_imagens/franky-home.jpg");}
+li#brook { background-image: url("../_imagens/brook-home.jpg");}
+li#jinbe { background-image: url("../_imagens/jinbe-home.jpg");}
+li#vivi { background-image: url("../_imagens/vivi-home.jpg");}
+li#roger { background-image: url("../_imagens/roger-home.jpg");}
+
+li#kaido { background-image: url("../_imagens/kaido-home.jpg");}
+li#linlin { background-image: url("../_imagens/linlin-home.jpg");}
+li#shanks { background-image: url("../_imagens/shanks-home.jpg");}
+li#teach { background-image: url("../_imagens/teach-home.jpg");}
+li#newgate { background-image: url("../_imagens/newgate-home.jpg");}
+
+
+/*Aviso final da página*/
+
+section.upgrades {
+
+    margin: 40px;
+    padding: 40px;
+    border-bottom: 1px solid #c0c0c0;
+    border-top: 1px solid #c0c0c0;
+    text-align: center;
+
+}
+
+section.upgrades p {
+
+    font-size: 2.6rem;
+    line-height: 1.6;
+
+}
+
+/*Fim página home*/
+
+/*Adaptação telas menores*/
+
+@media only screen and (max-width: 1370px) {
+    
+    div.main {max-width: 960px;}
+    
+    ul.imagens li {
+        
+        width: calc(33.3333% - 20px)
+        
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    section.intro {
+        
+        text-align: center;
+        
+    }
+    
+    ul.imagens li, div.shadow, div.shadow p {
+
+        height: 24vw;
+
+    }
+    
+    div.shadow p {font-size: 4.8vw;}
+    
+}
+
+@media only screen and (max-width: 780px) {
+    
+    /*div.main {width: 600px;}*/
+    
+   /* ul.imagens li, div.shadow {
+
+        height: 24vw;
+
+    }*/
+    
+    /*ul.imagens li {
+        
+        width: calc(50% - 20px);
+        
+    }*/
+    
+    /*div.shadow p {
+
+        font-size: 50px;
+        
+    }*/
+
+    /* div.main {width: 500px;} */
+    
+    /* 
+    ul.imagens li, div.shadow {
+
+        height: 35vw;
+
+    }
+    
+    ul.imagens li {
+        
+        width: calc(50% - 20px);
+        
+    }
+    
+    div.shadow p {
+
+        font-size: 8vw;
+        
+    }
+     */
+    
+}
+
+@media only screen and (max-width: 660px)  {
+    
+    div.main {width: 500px;}
+    
+    ul.imagens li, div.shadow, div.shadow p  {
+
+        height: 200px;
+
+    }
+    
+    ul.imagens li {
+        
+        width: calc(50% - 20px);
+        
+    }
+    
+    div.shadow p {
+
+        font-size: 4.0rem;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 520px) {
+    
+    div.main { 
+        
+        width: 100%;
+        
+    }
+    
+    section.intro {
+
+        margin: 25px 10px;
+
+    }
+    
+    ul.imagens { 
+        
+        width: 100%; 
+        margin: 0; 
+        padding: 10px; 
+        box-sizing: border-box;
+    
+    }
+    
+    ul.imagens li {
+
+        margin: 10px 0;
+
+    }
+
+    ul.imagens li, div.shadow, div.shadow p  {
+
+        width: 100%;
+        height: 55vw;
+        border-radius: 0;
+
+    }
+    
+    div.shadow p {font-size: 12vw;}
+    
+    section.upgrades {
+
+        margin: 40px 20px;
+        padding: 15px;
+
+    }
+    
+}
+
+@media only print {
+
+    ul.imagens li {
+
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+
+    }
+
+}

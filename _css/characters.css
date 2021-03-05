@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+.main p{
+    
+    text-align: left;
+    margin: 25px;
+    font-size: 2.0rem;
+    line-height: 1.6;
+    
+}
+
+.main h3 {
+
+    margin: 25px;
+    font-size: 3.0rem;
+
+}
+
+section.intro {
+    
+    padding: 25px 0;
+    border-bottom: 1px solid #c0c0c0;
+    
+}
+
+section.intro h2 {
+    
+    font-family: 'Bangers', cursive;
+    font-size: 5.5rem;
+    text-align: left;
+    font-weight: normal;
+    
+}
+
+section.content {
+
+    display: inline-block;
+    width: 100%;
+
+}
+
+div.char {
+
+    padding: 10px;
+    text-align: center;
+    float: right;
+    margin: 25px;
+    box-sizing: border-box;
+    
+}
+
+div.char img {
+
+    border: 2px solid gray;
+    box-sizing: border-box;
+    
+}
+
+div.char table {
+    
+    margin-top: 25px;
+    border: solid gray 1px;
+    border-collapse: collapse;
+    
+    
+}
+
+div.char, div.char img, div.char table {
+
+    width: 100%;
+    max-width: 300px;
+
+}
+
+div.char td, caption {
+    
+    border-bottom: solid gray 1px;
+    font-family: 'Roboto', sans-serif;
+    
+}    
+
+div.char caption {
+    
+    border: solid gray 1px;
+    font-size: 2.2rem;
+    background: #00b7a2;
+    color: #e9fff9;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.char caption::after {
+    
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    border-style: solid;
+    border-color: #e9fff9;
+    border-width: 2px 2px 0 0;
+    width: 6px;
+    height: 6px;
+    transform: rotate(-45deg);
+
+}
+
+.off caption::after {
+
+    transform: rotate(135deg);
+    top: 35%;
+
+}
+
+.off tbody {
+
+    display: none;
+
+}
+
+div.char td {
+    
+    font-size: 1.6rem;
+    padding: 15px;
+    vertical-align: top;
+    text-align: left;
+    
+}
+
+.textnowrap {
+
+    white-space: nowrap;
+
+}
+
+section.cartazes {
+
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+    /* background: red; */
+    /* clear: both; */
+    /* position: relative; */
+    /* width: 95%; */
+
+}
+
+div.control-left {
+
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blueviolet;
+
+}
+
+div.control-right {
+
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: blueviolet;
+
+}
+
+div.imagens { 
+
+    display: flex;
+    margin: 10px 20px;
+    text-align: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* background: url("../_imagens/luffy-home.jpg"); */
+
+}
+
+div.imagens div {
+
+    margin: 10px 20px;
+    margin-left: 0;
+    flex: none;
+    width: 100%;
+    scroll-snap-align: center;
+    /* background: red; */
+    /* border: 1px solid red; */
+
+}
+
+div.controls {
+
+    height: 100px;
+    flex: none;
+    background: brown;
+
+}
+
+div.imagens img {
+
+    width: 20vw;
+    max-width: 250px;
+    min-width: 200px;
+    border: 1px solid gray;
+
+}
+
+div.imagens p {
+
+    text-align: center;
+    margin: 10px;
+
+}
+
+section.upgrades {
+
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #c0c0c0;
+    border-top: 1px solid #c0c0c0;    
+    text-align: center;
+
+}
+
+section.upgrades p {
+
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 1370px) {
+/* 
+    div.imagens div {
+
+        width: 50%;
+
+    } */
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+   /*  div.imagens div {
+
+        width: 100%;
+
+    } */
+
+}
+
+@media only screen and (max-width: 780px) {
+    
+    section.intro h2 {
+        
+        text-align: center;
+        
+    }
+    
+    div.char {
+        
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+
+/*     section.imagens {
+
+        display: block;
+
+    } */
+    
+}
+
+@media only screen and (max-width: 620px) {
+    
+    section.upgrades {
+
+        margin: 40px 20px;
+        padding: 15px;
+
+    }
+    
+}
+
+.carousel-item {
+
+    background-color: blueviolet;
+    height: 600px;
+
+}
+
