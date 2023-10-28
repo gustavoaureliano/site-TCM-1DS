@@ -7,8 +7,8 @@
 @font-face {
     
     font-family: "onepiecefont";
-    src:url("../_fonts/onepiecefont.eot"),
-        url("../_fonts/onepiecefont.ttf");
+    src:url("../fonts/onepiecefont.eot"),
+        url("../fonts/onepiecefont.ttf");
     font-display: swap;
     
 }
